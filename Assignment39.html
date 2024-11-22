@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Form Layouts</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2>Task 1: Multi-Column Form Layout</h2>
+  <form>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="inputName">Name</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputMessage">Message</label>
+      <textarea class="form-control" id="inputMessage" rows="3" placeholder="Your message" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <hr>
+
+  <h2>Task 2: Inline Form Layout (Contact Form)</h2>
+  <form class="form-inline">
+    <div class="form-group mb-2">
+      <label for="inlineName" class="sr-only">Name</label>
+      <input type="text" class="form-control" id="inlineName" placeholder="Name" required>
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+      <label for="inlineEmail" class="sr-only">Email</label>
+      <input type="email" class="form-control" id="inlineEmail" placeholder="Email" required>
+    </div>
+    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+  </form>
+
+  <hr>
+
+  <h2>Task 3: Stacked Form Layout</h2>
+  <form>
+    <div class="form-group">
+      <label for="inputFirstName">First Name</label>
+      <input type="text" class="form-control" id="inputFirstName" placeholder="First name" required>
+    </div>
+    <div class="form-group">
+      <label for="inputLastName">Last Name</label>
+      <input type="text" class="form-control" id="inputLastName" placeholder="Last name" required>
+    </div>
+    <div class="form-group">
+      <label for="inputEmail">Email address</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="Enter email" required>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword">Password</label>
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <hr>
+
+  <h2>Task 4: Styling Forms with Floating Labels</h2>
+  <form>
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+      <label for="floatingPassword">Password</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <hr>
+
+  <h2>Task 5: Form Validation with Feedback</h2>
+  <form>
+    <div class="form-group">
+      <label for="emailInput">Email address</label>
+      <input type="email" class="form-control is-invalid" id="emailInput" placeholder="Enter email" required>
+      <div class="invalid-feedback">
+        Please provide a valid email address.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="passwordInput">Password</label>
+      <input type="password" class="form-control is-invalid" id="passwordInput" placeholder="Password" required>
+      <div class="invalid-feedback">
+        Please provide a valid password.
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
